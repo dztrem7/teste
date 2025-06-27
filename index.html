@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechZone - Sua loja gamer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Teste Joao</h1>
+      <button class="hamburger" id="hamburger-btn">
+        ☰
+      </button>
+      <nav id="nav-menu" class="hidden">
+        <ul class="nav-links">
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#promocoes">Promoções</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div class="container">
+      <h2>Os melhores periféricos e PCs para gamers exigentes</h2>
+      <p>Montagens personalizadas, acessórios de qualidade e promoções imperdíveis. Tudo em um só lugar.</p>
+      <a href="#produtos" class="btn">Ver Produtos</a>
+    </div>
+  </section>
+
+  <section id="categorias" class="categorias">
+    <div class="container">
+      <h2>Categorias</h2>
+      <div class="grid">
+        <div class="cat">
+          <img src="https://m.media-amazon.com/images/I/61YZsRHYYzL._UF894,1000_QL80_.jpg" alt="Teclado" />
+          <h3>Teclados</h3>
+        </div>
+        <div class="cat">
+          <img src="https://vibegaming.com.bd/wp-content/uploads/2024/05/Untitled-design-1-46.png" alt="Mouse" />
+          <h3>Mouses</h3>
+        </div>
+        <div class="cat">
+          <img src="https://cdn.awsli.com.br/2500x2500/1919/1919257/produto/262879814/001-dbhgtbbsp1.jpg" alt="Headset" />
+          <h3>Headsets</h3>
+        </div>
+        <div class="cat">
+          <img src="https://a-static.mlcdn.com.br/1500x1500/pc-gamer-ludic-by-bluepc-amd-ryzen-5-5500-geforce-rtx-3060-12gb-16gb-ram-ssd-1tb-m-2-nvme-fonte-600w-80-plus-pgbp-1007lud/2eletroinfo/21233r16ssd1tbrtx306012f6003flu/20bfa435a0d229c27893330f51b3c299.jpeg" alt="PC Gamer" />
+          <h3>PC Gamer</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <div class="container">
+      <h2>Produtos em Destaque</h2>
+      <div class="grid">
+        <div class="produto" onclick="abrirModal('teclado')" tabindex="0" role="button"
+          aria-label="Abrir detalhes do Teclado Mecânico RGB">
+          <img src="https://cdn.pixabay.com/photo/2020/10/28/08/28/keyboard-5693930_960_720.jpg"
+            alt="Teclado mecânico" />
+          <h3>Teclado Mecânico RGB</h3>
+          <p>Switch Red, iluminação personalizável.</p>
+          <span>R$ 349,90</span>
+        </div>
+        <div class="produto" onclick="abrirModal('mouse')" tabindex="0" role="button"
+          aria-label="Abrir detalhes do Mouse Gamer 7200DPI">
+          <img src="https://cdn.pixabay.com/photo/2018/11/06/00/53/gaming-3796584_960_720.jpg" alt="Mouse Gamer" />
+          <h3>Mouse Gamer 7200DPI</h3>
+          <p>Alta precisão com sensor óptico.</p>
+          <span>R$ 159,90</span>
+        </div>
+        <div class="produto" onclick="abrirModal('pc')" tabindex="0" role="button"
+          aria-label="Abrir detalhes do PC Gamer RTX 3060">
+          <img src="https://cdn.pixabay.com/photo/2021/01/18/21/18/computer-5928826_960_720.jpg" alt="PC Gamer" />
+          <h3>PC Gamer RTX 3060</h3>
+          <p>Ryzen 5 5600, 16GB RAM, SSD 1TB.</p>
+          <span>R$ 5.799,00</span>
+        </div>
+        <div class="produto" onclick="abrirModal('headset')" tabindex="0" role="button"
+          aria-label="Abrir detalhes do Headset Surround 7.1">
+          <img src="https://cdn.pixabay.com/photo/2016/12/04/17/52/headphones-1883916_960_720.jpg"
+            alt="Headset Gamer" />
+          <h3>Headset Surround 7.1</h3>
+          <p>Som envolvente e microfone removível.</p>
+          <span>R$ 289,90</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="promocoes" class="promocoes">
+    <div class="container">
+      <h2>🔥 Promoções da Semana</h2>
+      <ul>
+        <li>📦 Mousepad XXL Grátis nas compras acima de R$ 300!</li>
+        <li>💻 PC Gamer com frete grátis para todo o Brasil.</li>
+        <li>🎧 Headset com 20% OFF até domingo!</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="depoimentos">
+    <div class="container">
+      <h2>O que os clientes dizem</h2>
+      <div class="grid">
+        <blockquote>
+          <p>"Comprei meu setup completo na TechZone e foi perfeito. Atendimento excelente e entrega rápida!"</p>
+          <footer>- Lucas R.</footer>
+        </blockquote>
+        <blockquote>
+          <p>"Os preços são justos e a qualidade dos produtos é top. Com certeza vou comprar de novo."</p>
+          <footer>- Ana C.</footer>
+        </blockquote>
+        <blockquote>
+          <p>"A montagem do meu PC foi impecável. Recomendo demais a loja."</p>
+          <footer>- Thiago M.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Fale Conosco</h2>
+      <form>
+        <input type="text" placeholder="Nome" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p>Email: joao@gmail.com.br | WhatsApp: (11) 91234-5678</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Teste Joao - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <!-- Modal -->
+  <div id="produtoModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+    aria-describedby="modalDesc">
+    <div class="modal-content">
+      <button id="closeModalBtn" aria-label="Fechar modal">×</button>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" src="" alt="" />
+      <p id="modalDesc"></p>
+      <span id="modalPrice"></span>
+    </div>
+  </div>
+
+</body>
+<script src="./app.js"></script>
+
+</html>
